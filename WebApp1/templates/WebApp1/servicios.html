@@ -1,0 +1,21 @@
+{% extends 'WebApp1/BASE.html' %}
+
+{% load static %}
+
+{% block content %}
+
+   {% for servicio in servicios  %}
+   
+   <div>
+
+      <h2 style="color: azure;">{{servicio.titulo}}</h2>
+
+      <p style="color: azure;">{{servicio.Contenido}}</p>
+
+   </div>
+   
+   
+   {% endfor %}
+
+
+  {% endblock  %}
