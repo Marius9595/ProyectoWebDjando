@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Catergoria,Post
+from .models import Categoria,Post
 
 # Register your models here.
 
@@ -12,7 +12,7 @@ class PostAdmin(admin.ModelAdmin):
     
     readonly_fields=('created','updated')
     
-admin.site.register(Catergoria,CategoriaAdmin)
+admin.site.register(Categoria,CategoriaAdmin)
 
 admin.site.register(Post,PostAdmin)
     
